@@ -50,11 +50,22 @@ function showEditInput(paragraphElement){
     input.name="editInput";
     input.value=paragraphElement.textContent;
     input.classList.add("editInput");
-    
 
+    let childrens = paragraphElement.parentElement.children
     paragraphElement.parentElement.appendChild(input);
+
+    childrens[0].style.display = childrens[1].style.display = childrens[2].style.display = 'none';
     input.focus();
 }
+
+
+
+
+
+
+
+
+
 
 
 function updateTodo(){
@@ -66,6 +77,9 @@ function updateTodo(){
     if(newText !== ""){
         var paragraph=editInput.parentElement.querySelector(".paragraph");
         paragraph.textContent=newText;
+
+        let childrens = editInput.parentElement.children
+        childrens[0].style.display = childrens[1].style.display = childrens[2].style.display = 'block';
     }
 
     editInput.remove();
@@ -137,14 +151,5 @@ addInput.addEventListener("keypress",function (event){
       createTodo();
     
 });
-
-
-
-
-
-
-
-
-
 
 
