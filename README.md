@@ -7,4 +7,4 @@ Here you can add your todos and perform some basic operations on them:
 2. Delete a todo
 3. Edit a Todo
 
-![This is an image](https://github.com/Sanjeevani15/TODO-using-JS/image.png)
+![This is an image](https://github.com/Sanjeevani15/TODO-using-JS/blob/main/image.png)
